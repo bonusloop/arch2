@@ -15,7 +15,7 @@
     <header class="header">
         <div class="header__navigation">
             <a class="header__logo-link" href="">
-                <img class="header__logo" src="./assets/img/logo-arch.svg" alt="logo">
+                <img class="header__logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/img/logo-arch.svg" alt="logo">
             </a>
             <nav class="header__nav nav">
                 <ul class="nav__list">
