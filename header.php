@@ -27,7 +27,7 @@
             </nav>
         </div>
         <div class="header__autorization">
-            <img class="header__search" src="./assets/img/ic-searhc.svg" alt="search">
+            <img class="header__search" src="<?php echo IMG_DIR; ?>/ic-searhc.svg" alt="search">
             <button class="header__btn header__btn--sing-in">Sign In</button>
             <button class="header__btn header__btn--sing-up">Sign Up</button>    
         </div>

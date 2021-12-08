@@ -128,7 +128,7 @@
     border: none;
     font-size: 0;
     cursor: pointer;
-    background-image: url(./../../assets/img/arrow-right.svg);
+    background-image: url(./../../img/arrow-right.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
@@ -137,7 +137,7 @@
 
 .slick-prev:hover {
     background-color: #00000008;
-    background-image: url(./../../assets/img/arrow-right-hover.svg);
+    background-image: url(./../../img/arrow-right-hover.svg);
 }
 
 
@@ -152,7 +152,7 @@
     font-size: 0;
     cursor: pointer;
    
-    background-image: url(./../../assets/img/arrow-left.svg);
+    background-image: url(./../../img/arrow-left.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #fff;
@@ -161,5 +161,5 @@
 
 .slick-next:hover {
     background-color: #00000008;
-    background-image: url(./../../assets/img/arrow-left-hover.svg);
+    background-image: url(./../../img/arrow-left-hover.svg);
 }
