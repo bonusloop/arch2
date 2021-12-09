@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./libs/slick/slick.css">
     <!--<link rel="stylesheet" href="./style.css">-->
     <?php wp_head(); ?>
-    <title>Archmove</title>
+    <title><?php bloginfo( 'description' ); ?></title>
 </head>
 <body>
     <header class="header">
