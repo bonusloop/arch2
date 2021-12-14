@@ -10,7 +10,9 @@
                         <li class="nav__list-item"><a class="nav__link" href="">Privacy Policy</a></li>
                     </ul>
                 </nav>
-                <a href="#"><img class="logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/img/logo-arch.svg" alt="logo"></a>
+                <a href="<?php echo home_url();?>">
+                    <img class="logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/img/logo-arch.svg" alt="logo">
+                </a>
             </div>
         </div>
     </footer>

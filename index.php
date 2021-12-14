@@ -15,7 +15,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <div class="container">
             <h2 class="gallery__title title">Build professional valuable room for you</h2>
             <div class="gallery-inner">
@@ -29,7 +29,7 @@
         </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="container">
             <h2 class="features__title title">Build your needs with Archmove</h2>
             <div class="features__inner">
@@ -72,7 +72,7 @@
         </div>
     </section>
         
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <div class="reviews-top">
                 <h2 class="reviews-top__title title">Sound Too Good To Be True?</h2>
@@ -119,7 +119,7 @@
 
     </section>
 
-    <section class="partners">
+    <section class="partners" id="partners">
         <div class="container">
             <div class="partners__inner">
                 <h2 class="partners__title title">Our Partners</h2>

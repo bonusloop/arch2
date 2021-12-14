@@ -14,15 +14,15 @@
 <body>
     <header class="header">
         <div class="header__navigation">
-            <a class="header__logo-link" href="">
+            <a class="header__logo-link" href="<?php bloginfo( 'url' ); ?>">
                 <img class="header__logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/img/logo-arch.svg" alt="logo">
             </a>
             <nav class="header__nav nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item"><a class="nav__link" href="">Design Gallery</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="">List of Architect</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="">Articles</a></li>
-                    <li class="nav__list-item"><a class="nav__link" href="">How it Works</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#gallery">Design Gallery</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#features">List of Architect</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#reviews">Articles</a></li>
+                    <li class="nav__list-item"><a class="nav__link" href="#partners">How it Works</a></li>
                 </ul>
             </nav>
         </div>
