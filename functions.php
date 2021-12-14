@@ -32,4 +32,5 @@ function arch_scripts() {
 
 function arch_theme_register_nav_menu() {
 	register_nav_menu( 'header_menu', 'Header Menu' );
+    register_nav_menu( 'footer_menu', 'Footer Menu' );
 }

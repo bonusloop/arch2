@@ -17,14 +17,24 @@
             <a class="header__logo-link" href="<?php bloginfo( 'url' ); ?>">
                 <img class="header__logo" src="<?php bloginfo( 'template_url' ); ?> ./assets/img/logo-arch.svg" alt="logo">
             </a>
-            <nav class="header__nav nav">
+            <!--<nav class="header__nav nav">
                 <ul class="nav__list">
                     <li class="nav__list-item"><a class="nav__link" href="#gallery">Design Gallery</a></li>
                     <li class="nav__list-item"><a class="nav__link" href="#features">List of Architect</a></li>
                     <li class="nav__list-item"><a class="nav__link" href="#reviews">Articles</a></li>
                     <li class="nav__list-item"><a class="nav__link" href="#partners">How it Works</a></li>
                 </ul>
-            </nav>
+            </nav>-->
+            <?php
+            wp_nav_menu( [
+                'theme_location'  => 'header_menu',
+                'container'       => 'nav',
+                'container_class' => 'nav',
+                'container_id'    => '',
+                'menu_class'      => 'menu',
+                'menu_id'         => '',
+            ] );
+            ?>
         </div>
         <div class="header__autorization">
             <img class="header__search" src="<?php echo IMG_DIR; ?>/ic-searhc.svg" alt="search">
