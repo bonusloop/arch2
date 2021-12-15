@@ -29,10 +29,8 @@
             wp_nav_menu( [
                 'theme_location'  => 'header_menu',
                 'container'       => 'nav',
-                'container_class' => 'nav',
-                'container_id'    => '',
-                'menu_class'      => 'menu',
-                'menu_id'         => '',
+                'container_class' => 'nav header__nav',
+                'menu_class'      => 'nav__list',
             ] );
             ?>
         </div>
