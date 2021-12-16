@@ -11,6 +11,7 @@ add_action( 'wp_enqueue_scripts', 'arch_styles' );
 add_action( 'wp_enqueue_scripts', 'arch_scripts' );
 // add_action('wp_print_styles', 'theme_name_scripts'); // можно использовать этот хук он более поздний
 add_action( 'after_setup_theme', 'arch_theme_register_nav_menu' );
+add_action( 'init', 'register_post_types' );
 
 
 function arch_styles() {
@@ -33,4 +34,26 @@ function arch_scripts() {
 function arch_theme_register_nav_menu() {
 	register_nav_menu( 'header_menu', 'Header Menu' );
     register_nav_menu( 'footer_menu', 'Footer Menu' );
+}
+
+function register_post_types(){
+	register_post_type( 'features', [
+		'labels' => [
+			'name'               => 'features', // основное название для типа записи
+			'singular_name'      => 'feature', // название для одной записи этого типа
+			'add_new'            => 'Добавить feature', // для добавления новой записи
+			'add_new_item'       => 'Добавление feature', // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          => 'Редактирование feature', // для редактирования типа записи
+			'new_item'           => 'Новое feature', // текст новой записи
+			'view_item'          => 'Смотреть feature', // для просмотра записи этого типа.
+			'search_items'       => 'Искать feature', // для поиска по этим типам записи
+			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+			'menu_name'          => 'features', // название меню
+		],
+		'public'              => false,
+	    'show_ui'             => true, // зависит от public
+		'menu_icon'           => 'dashicons-carrot',
+		'supports'            => [ 'title', 'editor' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+	] );
 }
